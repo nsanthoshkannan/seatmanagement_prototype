@@ -1,4 +1,4 @@
-package com.nokia.seatmanagement;
+package com.nokia.seatmanagement.facade;
 
 import org.junit.Test;
 
@@ -6,9 +6,8 @@ import com.nokia.seatmanagement.core.exceptions.DuplicateClaimRequestException;
 import com.nokia.seatmanagement.core.exceptions.InvalidSeatException;
 import com.nokia.seatmanagement.core.exceptions.InvalidUserException;
 import com.nokia.seatmanagement.core.exceptions.SeatUnavailableException;
-import com.nokia.seatmanagement.facade.SeatManagerFacade;
 
-public class SeatmanagementTests {
+public class TestSeatManagerFacade {
 
 	SeatManagerFacade facade = new SeatManagerFacade();
 

@@ -15,7 +15,7 @@ public class SMSNotifier implements Notifier {
 	public void notify(Integer userId, String message) throws InvalidUserException {
 		
 		Users user = SeatManagementDbHelper.getUserDetails(userId);
-		Integer mobileNumber = user.getMobile();
+		Long mobileNumber = user.getMobile();
 		System.out.println("Mock SMS Notification sent to:" + mobileNumber + " message:"  + message);
 		
 		/*

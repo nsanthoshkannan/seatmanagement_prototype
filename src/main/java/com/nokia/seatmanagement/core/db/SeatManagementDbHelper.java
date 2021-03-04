@@ -37,10 +37,10 @@ public class SeatManagementDbHelper {
 		seatsMap.put(4, new Seats(4, SeatStatus.AVAILABLE));
 
 		usersMap = new HashMap<Integer, Users>();
-		usersMap.put(1, new Users(1, "santhosh", "nsanthoshkannan@gmail.com"));
-		usersMap.put(2, new Users(2, "kannan", "kannan@gmail.com"));
-		usersMap.put(3, new Users(3, "bhoopal", "bhoopal@gmail.com"));
-		usersMap.put(4, new Users(4, "mahendran", "mahendran@gmail.com"));
+		usersMap.put(1, new Users(1, "santhosh", "nsanthoshkannan@gmail.com", 99429569334L));
+		usersMap.put(2, new Users(2, "kannan", "kannan@gmail.com", 7010485538L));
+		usersMap.put(3, new Users(3, "bhoopal", "bhoopal@gmail.com", 1234567890L));
+		usersMap.put(4, new Users(4, "mahendran", "mahendran@gmail.com", 9876543210L));
 
 		claimRequestMap = new HashMap<Integer, ClaimRequest>();
 

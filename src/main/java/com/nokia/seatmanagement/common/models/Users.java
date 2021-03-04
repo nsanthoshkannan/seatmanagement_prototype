@@ -16,18 +16,19 @@ public class Users {
 	private String password; 
 	private String fullname; 
 	private String email; 
-	private Integer mobile;
+	private Long mobile;
 	private Date dob; 
 	private Date updateddatetime;
 	
 	
 	
 	
-	public Users(Integer id, String username, String email) {
+	public Users(Integer id, String username, String email, Long mobile) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.email = email;
+		this.mobile = mobile;
 	}
 	public Integer getId() {
 		return id;
@@ -59,10 +60,10 @@ public class Users {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Integer getMobile() {
+	public Long getMobile() {
 		return mobile;
 	}
-	public void setMobile(Integer mobile) {
+	public void setMobile(Long mobile) {
 		this.mobile = mobile;
 	}
 	public Date getDob() {

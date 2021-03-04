@@ -4,9 +4,11 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
+import com.nokia.seatmanagement.facade.TestSeatManagerFacade;
+
 public class SeatManagementTestRunner {
    public static void main(String[] args) {
-      Result result = JUnitCore.runClasses(SeatmanagementTests.class);
+      Result result = JUnitCore.runClasses(TestSeatManagerFacade.class);
 		
       for (Failure failure : result.getFailures()) {
          System.out.println(failure.toString());
